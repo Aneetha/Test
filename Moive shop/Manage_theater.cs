@@ -36,9 +36,6 @@ namespace Moive_shop
         {
             this.Close();
         }
-
-     
-
         private void Theater_info_normal_Click(object sender, EventArgs e)
         {
             //this.panel1.Size = new System.Drawing.Size(548, 543);
@@ -79,9 +76,47 @@ namespace Moive_shop
 
         private void Manage_theater_Load(object sender, EventArgs e)
         {
-           
-            
-            
+            this.CenterToParent();
+            if(panel1.Controls.Count<=0)
+            {
+                for (int ind = 0; ind < 4;ind++ )
+                {
+                    add_timing add = new add_timing();
+                    panel1.Controls.Add(add);
+                    add.Dock = DockStyle.Top;
+                }
+            }
+            if(panel2.Controls.Count<=0)
+            {
+                for (int ind = 0; ind < 4;ind++ )
+                {
+                    add_category add = new add_category();
+                    panel2.Controls.Add(add);
+                    add.Dock = DockStyle.Top;
+                }
+            }
+            if (common.edit_flag == true)
+            {
+                db_query.edit_text_pass();
+                theater_dropdown.Enabled = false;
+                theater_text.Text = common.t_old_name;
+                theater_Screen_name_txt.Text = common.screen_name;
+                theater_location_txt.Text = common.location;
+                theater_city_txt.Text = common.city;
+                sate_txt.Text = common.state;
+                theater_latitude.Text = common.latitude;
+                theater_longitude.Text = common.longitude;
+                //rows_text.Text = common.rows.ToString();
+                //cols_txt.Text = common.rows.ToString();
+                if (common.status.ToLower() == "active")
+                {
+                    theater_active.Checked = true;
+                }
+                else
+                {
+                    theater_inactive.Checked = true;
+                }
+            }
         }
 
         private void seat_manage_normal_Click(object sender, EventArgs e)
@@ -89,112 +124,7 @@ namespace Moive_shop
             this.Hide();
             theater_Seating seat = new theater_Seating();
             seat.ShowDialog();
-            
-            
-
-        
-                          
-            //if (theater_validate("none"))
-            //{
-
-            //    ////theater_label.Text = "";
-            //    ////theater_screen_label.Text = "";
-            //    ////theater_Location_label.Text = "";
-            //    //theater_label.Text = common.theter_name;
-            //    //theater_screen_label.Text = common.screen_name;
-            //    //theater_Location_label.Text = common.location;   
-
-            //    //this.Hide();
-            //    //theater_Seating seat_manage = new theater_Seating();
-            //    //seat_manage.Show();
-            //}
          }
-
-        private void pictureBox3_Click(object sender, EventArgs e)
-        {
-            //if (rows_text.Text != "" && cols_txt.Text != "")
-            //{
-            //    int rows=0, cols=0;
-            //    try
-            //    {
-            //        rows = Convert.ToInt32(rows_text.Text);
-
-            //        cols = Convert.ToInt32(cols_txt.Text);
-            //    }
-            //    catch { }
-                
-
-            //    if (row_count != rows || col_count != cols)
-            //    {
-            //        try
-            //        {
-            //            dataGridView1.Rows.Clear();
-            //            dataGridView1.Columns.Clear();
-
-            //            row_count = rows;
-            //            col_count = cols;
-            //            DataGridViewComboBoxColumn dgvCmb = new DataGridViewComboBoxColumn();
-            //            DataGridViewTextBoxColumn dvgtxt = new DataGridViewTextBoxColumn();
-            //            dataGridView1.Columns.Add(dgvCmb);
-            //            for (int index = 0; index < common.category.Count; index++)
-            //            {
-            //                dgvCmb.Items.Add(common.category[index]);
-            //            }
-            //            dataGridView1.Columns.Add(dvgtxt);
-            //            dataGridView1.Columns[0].ReadOnly = false;
-            //            dataGridView1.Columns[0].AutoSizeMode = DataGridViewAutoSizeColumnMode.None;
-            //            dataGridView1.Columns[1].ReadOnly = false;
-            //            for (int i = 2; i < cols + 2; i++)
-            //            {
-            //                dataGridView1.Columns.Add("", "");
-            //                dataGridView1.Columns[i].ReadOnly = true;
-
-            //            }
-            //            int count = 0;
-            //            for (int i = 0; i < rows; i++)
-            //            {
-            //                dataGridView1.Rows.Add();
-
-            //                for (int j = 2; j < dataGridView1.Columns.Count; j++)
-            //                {
-            //                    count = count + 1;
-
-            //                    dataGridView1.Rows[i].Cells[j].Value = count;
-            //                    dataGridView1.Rows[i].Cells[j].Style.BackColor = Color.ForestGreen;
-                                
-            //                }
-            //            }
-            //        }
-            //        catch { }
-            //    }
-            //    else
-            //    {
-            //        try
-            //        {
-            //            int num = 0;
-            //            for (int i = 0; i < dataGridView1.Rows.Count; i++)
-            //            {
-            //                for (int j = 2; j < dataGridView1.Columns.Count; j++)
-            //                {
-            //                    if (dataGridView1.Rows[i].Cells[j].Style.BackColor == Color.DarkGray)
-            //                    {
-            //                        dataGridView1.Rows[i].Cells[j].Value = "";
-            //                        continue;
-            //                    }
-            //                    num = num + 1;
-            //                    dataGridView1.Rows[i].Cells[j].Value = num;
-
-
-            //                }
-            //            }
-            //        }
-            //        catch { }
-            //    }
-            //}
-           
-
-        }
-
         private void dataGridView1_MouseClick(object sender, MouseEventArgs e)
         {
             if (Convert.ToString(e.Button).ToLower() == "right")
@@ -203,104 +133,24 @@ namespace Moive_shop
                 contextMenuStrip1.Show(Cursor.Position);
             }
         }
-
-        //private void spaceToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (dataGridView1.SelectedCells.Count > 0)
-        //        {
-        //            for (int i = 0; i < dataGridView1.SelectedCells.Count; i++)
-        //            {
-        //                if (dataGridView1.SelectedCells[i].ColumnIndex == 0 || dataGridView1.SelectedCells[i].ColumnIndex == 1)
-        //                {
-        //                    continue;
-        //                }
-        //                dataGridView1.SelectedCells[i].Style.BackColor = Color.DarkGray;
-        //            }
-        //        }
-        //    }
-        //    catch { }
-        //}
-
-        //private void holdToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (dataGridView1.SelectedCells.Count > 0)
-        //        {
-
-        //            for (int i = 0; i < dataGridView1.SelectedCells.Count; i++)
-        //            {
-        //                if (dataGridView1.SelectedCells[i].ColumnIndex == 0 || dataGridView1.SelectedCells[i].ColumnIndex == 1)
-        //                {
-        //                    continue;
-        //                }
-        //                if (dataGridView1.SelectedCells[i].Style.BackColor == Color.DarkGray)
-        //                {
-        //                    continue;
-        //                }
-        //                dataGridView1.SelectedCells[i].Style.BackColor = Color.Yellow;
-        //            }
-        //        }
-        //    }
-        //    catch { }
-        //}
-
-        //private void availabToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    try
-        //    {
-        //        if (dataGridView1.SelectedCells.Count > 0)
-        //        {
-        //            for (int i = 0; i < dataGridView1.SelectedCells.Count; i++)
-        //            {
-        //                if (dataGridView1.SelectedCells[i].ColumnIndex == 0 || dataGridView1.SelectedCells[i].ColumnIndex == 1)
-        //                {
-        //                    continue;
-        //                }
-        //                if (dataGridView1.SelectedCells[i].Style.BackColor == Color.DarkGray)
-        //                {
-        //                    continue;
-        //                }
-        //                dataGridView1.SelectedCells[i].Style.BackColor = Color.ForestGreen;
-        //            }
-        //        }
-        //    }
-        //    catch
-        //    {
-        //    }
-        //}
-
-        //private void rows_text_KeyPress(object sender, KeyPressEventArgs e)
-        //{
-        //   e.Handled = !Char.IsNumber(e.KeyChar) && e.KeyChar != 8;
-           
-        //}
-
-        //private void undoSpaceToolStripMenuItem_Click(object sender, EventArgs e)
-        //{
-        //    for (int i = 0; i < dataGridView1.SelectedCells.Count; i++)
-        //    {
-        //        if (dataGridView1.SelectedCells[i].ColumnIndex == 0 || dataGridView1.SelectedCells[i].ColumnIndex == 1)
-        //        {
-        //            continue;
-        //        }
-        //        if (dataGridView1.SelectedCells[i].Style.BackColor == Color.DarkGray)
-        //        {
-        //            dataGridView1.SelectedCells[i].Style.BackColor = Color.Green;
-        //        }
-               
-        //    }
-        //}
-
-      
-
-    
-
-      
         private bool theater_validate(string mode)
         {
+           common.show_timing_list.Clear();
+           common.categories_list.Clear();
+           for (int ind = 0; ind < panel1.Controls.Count; ind++)
+           {
+                if (!string.IsNullOrEmpty(panel1.Controls[ind].Controls[2].Text) && !string.IsNullOrEmpty(panel1.Controls[ind].Controls[1].Text) && !string.IsNullOrEmpty(panel1.Controls[ind].Controls[0].Text))
+               {
+                  common.show_timing_list.Add(panel1.Controls[ind].Controls[2].Text + ":" + panel1.Controls[ind].Controls[1].Text + ":" + panel1.Controls[ind].Controls[0].Text);
+               }
+            }
+           for (int cat_ind = 0; cat_ind < panel2.Controls.Count; cat_ind++)
+           {
+               if (!string.IsNullOrEmpty(panel2.Controls[cat_ind].Controls[2].Text) && !string.IsNullOrEmpty(panel2.Controls[cat_ind].Controls[1].Text))
+               {
+                  common.categories_list.Add(panel2.Controls[cat_ind].Controls[2].Text + "->" + panel2.Controls[cat_ind].Controls[1].Text);
+               }
+           }
             if(string.IsNullOrEmpty(theater_dropdown.Text.Trim())&&string.IsNullOrEmpty(theater_text.Text.Trim()))
             {
                 MessageBox.Show("Please select or enter a theater name.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -331,16 +181,16 @@ namespace Moive_shop
                 sate_txt.Focus();
                 return false;
             }
-            //else if (show_timing_list.Items.Count <= 0)
-            //{
-            //    MessageBox.Show("Please enter least one show timing.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    return false;
-            //}
-            //else if (categories_list.Items.Count <= 0)
-            //{
-            //    MessageBox.Show("Please enter the categories and its price.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            //    return false;
-            //}
+            else if (common.show_timing_list.Count <= 0)
+            {
+                MessageBox.Show("Please enter least one show timing.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
+            else if (common.categories_list.Count <= 0)
+            {
+                MessageBox.Show("Please enter the categories and its price.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return false;
+            }
             else
             {
                 if (mode == "save")
@@ -353,10 +203,9 @@ namespace Moive_shop
                     common.latitude = null;
                     common.longitude = null;
                     common.status = "0";
-                    
-                     
                     if (!string.IsNullOrEmpty(theater_dropdown.Text.Trim()))
                     {
+                        common.theater_drop_name = theater_dropdown.Text.Trim();
                         common.theter_name = theater_dropdown.Text.Trim();
                     }
                     else
@@ -368,38 +217,34 @@ namespace Moive_shop
                     common.location = theater_location_txt.Text.Trim();
                     common.city = theater_city_txt.Text.Trim();
                     common.state = sate_txt.Text.Trim();
-                    if (string.IsNullOrEmpty(theater_latitude.Text.Trim()) && !string.IsNullOrEmpty(theater_longitude.Text.Trim()))
+                    if (!string.IsNullOrEmpty(theater_latitude.Text.Trim()) && !string.IsNullOrEmpty(theater_longitude.Text.Trim()))
                     {
                         common.latitude = theater_latitude.Text.Trim();
                         common.longitude = theater_longitude.Text.Trim();
                     }
-                    //for (int item = 0; item < show_timing_list.Items.Count; item++)
-                    //{
-                    //    common.show_timing.Add(show_timing_list.Items[item].ToString());
-                    //}
-                    //if (theater_inactive.Checked == true)
-                    //    common.status = "1";
-                    //for (int item = 0; item < categories_list.Items.Count; item++)
-                    //{
-                    //    int split = categories_list.Items[item].ToString().IndexOf("->");
-                    //    common.category.Add(categories_list.Items[item].ToString().Substring(0, split).Trim());
-                    //    common.price.Add(Convert.ToDecimal(categories_list.Items[item].ToString().Substring(split + 2).Trim()));
-                    //}
+                    for (int item = 0; item < common.show_timing_list.Count; item++)
+                    {
+                        common.show_timing.Add(common.show_timing_list[item].ToString());
+                    }
+                    if (theater_inactive.Checked == true)
+                        common.status = "1";
+                    for (int item = 0; item < common.categories_list.Count; item++)
+                    {
+                        int split = common.categories_list[item].ToString().IndexOf("->");
+                        common.category.Add(common.categories_list[item].ToString().Substring(0, split).Trim());
+                        common.price.Add(Convert.ToDecimal(common.categories_list[item].ToString().Substring(split + 2).Trim()));
+                    }
                 }
-   
                 return true;
             }
-
         }
 
         private void save_Click(object sender, EventArgs e)
         {
             if (theater_validate("save"))
             {
-               
                 seat_manage_normal_Click(this.seat_manage_normal, null);
             }
-
         }
 
         private void theater_info_panel_Paint(object sender, PaintEventArgs e)
@@ -413,150 +258,13 @@ namespace Moive_shop
             for (int index = 0; index < common.theater_drop.Count; index++)
             {
                 theater_dropdown.Items.Add(common.theater_drop[index]);
-
             }
-            
         }
 
         private void theater_dropdown_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.KeyChar = (char)Keys.None;
         }
-
-        //private void booking_refresh_Click(object sender, EventArgs e)
-        //{
-        //    row_count = 0;
-        //     col_count =0;
-        //     pictureBox3_Click(this.seat_prev, null);
-
-        //}
-        //private bool validate_seats()
-        //{
-        //    if (string.IsNullOrEmpty(rows_text.Text.Trim()) && string.IsNullOrEmpty(cols_txt.Text.Trim()))
-        //    {
-        //        MessageBox.Show("Please sepcify rows/columns.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //        return false;
-        //    }
-        //    else
-        //    {
-        //        common.rows = 0;
-        //        common.cols = 0;
-        //        common.rows = Convert.ToInt32(rows_text.Text.Trim());
-        //        common.cols = Convert.ToInt32(cols_txt.Text.Trim());
-        //        return true;
-        //    }           
-        //}
-        //private bool seat_update()
-        //{
-        //    try
-        //    {
-        //        if (db_query.con.State.ToString().ToLower() == "closed")
-        //        {
-        //            db_query.connection();
-        //        }
-        //        using (SQLiteCommand cmd = new SQLiteCommand(db_query.con))
-        //        {
-
-        //            for (int row = 0; row < dataGridView1.Rows.Count; row++)
-        //            {
-        //                int category_id = 0;
-
-        //                using (SQLiteCommand cmd_cat = new SQLiteCommand("SELECT category_id FROM table_category WHERE screen_id=" + "'" + common.screen_id + "'" + " AND category_name=" + "'" + dataGridView1.Rows[row].Cells[0].Value.ToString().Trim() + "'" + ";", db_query.con))
-        //                {
-        //                    SQLiteDataReader rec = cmd_cat.ExecuteReader();
-        //                    while (rec.Read())
-        //                    {
-        //                        category_id = rec.GetInt32(0);
-
-        //                    }
-
-        //                }
-        //                for (int col = 0; col < dataGridView1.Columns.Count; col++)
-        //                {
-        //                    string seat_no = string.Empty;
-        //                    string status = string.Empty;
-                                                 
-                                                     
-        //                    if (col == 0)
-        //                    {
-        //                        continue;
-        //                    }
-        //                    seat_no = Convert.ToString(dataGridView1.Rows[row].Cells[col].Value);
-        //                    if (col == 1)
-        //                    {
-        //                        seat_no = "0";
-        //                    }
-
-        //                    if (dataGridView1.Rows[row].Cells[col].Style.BackColor == Color.DarkGray)
-        //                    {
-        //                        status = "space";
-        //                        seat_no = "0";
-        //                    }
-        //                    else if (dataGridView1.Rows[row].Cells[col].Style.BackColor == Color.ForestGreen)
-        //                    {
-        //                        status = "available";
-        //                    }
-        //                    else if (dataGridView1.Rows[row].Cells[col].Style.BackColor == Color.Yellow)
-        //                    {
-        //                        status = "holded";
-        //                    }
-        //                    else
-        //                    {
-        //                        status = "name";
-        //                    }
-
-        //                    cmd.CommandText = "insert into table_screen_seats(theater_id,screen_id,category_id,seat_no,status) Values(@t_id,@s_id,@c_id,@seat_no,@satus);";
-        //                    cmd.Parameters.AddWithValue("@t_id", common.theater_id);
-        //                    cmd.Parameters.AddWithValue("@s_id", common.screen_id);
-        //                    cmd.Parameters.AddWithValue("@c_id", category_id);
-        //                    cmd.Parameters.AddWithValue("@seat_no", seat_no);
-        //                    cmd.Parameters.AddWithValue("@satus", status);
-        //                   cmd.ExecuteNonQuery();
-        //                }
-        //            }
-        //            return true;
-        //        }
-
-        //    }
-        //    catch { return false; }
-
-        //}
-
-        //private void sseat_save_Click(object sender, EventArgs e)
-        //{
-
-        //   if (validate_seats() && theater_validate("save"))
-        //   {
-                                      
-        //       if (string.IsNullOrEmpty(theater_dropdown.Text))
-        //       {
-        //           if (db_query.theater_update() && db_query.screen_update() && db_query.screen_timing_update() && db_query.screen_category_update() && seat_update())
-        //           {
-        //               MessageBox.Show("Updated successfully", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //               this.Close();
-        //           }
-        //           else
-        //           {
-        //               MessageBox.Show("Falied to Update, Please Try Again.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //           }
-
-        //       }
-        //       else
-        //       {
-        //           if (db_query.screen_update() && db_query.screen_timing_update() && db_query.screen_category_update() && seat_update())
-        //           {
-        //               MessageBox.Show("Updated successfully", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //              this.Close();
-        //           }
-        //           else
-        //           {
-        //               MessageBox.Show("Falied to Update, Please Try Again.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        //           }
-        //       }
-        //  }
-        
-        //}
-
         private void theater_dropdown_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (theater_dropdown.Text != "")
@@ -564,10 +272,72 @@ namespace Moive_shop
                 theater_text.Enabled = false;
             }
         }
-
-        private void theater_info_select_Click(object sender, EventArgs e)
+        private void theater_text_KeyPress(object sender, KeyPressEventArgs e)
         {
+            e.Handled = !Char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32;
+        }
 
+        private void theater_Screen_name_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !Char.IsNumber(e.KeyChar) && !Char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32;
+        }
+
+        private void theater_location_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !Char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32;
+        }
+
+        private void theater_city_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !Char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32;
+        }
+
+        private void sate_txt_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !Char.IsLetter(e.KeyChar) && e.KeyChar != 8 && e.KeyChar != 32;
+        }
+
+        private void theater_latitude_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !Char.IsNumber(e.KeyChar) && e.KeyChar != 8;
+        }
+
+        private void theater_longitude_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !Char.IsNumber(e.KeyChar) && e.KeyChar != 8;
+        }
+
+        private void cancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void Add_timing_Click(object sender, EventArgs e)
+        {
+            if (panel1.Controls.Count <= 1)
+            {
+                MessageBox.Show("Sorry.You can't delete show timing.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                add_timing add_time = new add_timing();
+                panel1.Controls.Add(add_time);
+                add_time.Dock = DockStyle.Top;
+            }
+        }
+
+        private void category_add_Click(object sender, EventArgs e)
+        {
+            if (panel2.Controls.Count <= 1)
+            {
+                MessageBox.Show("Sorry.You can't delete category.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                add_category add_cat = new add_category();
+                panel2.Controls.Add(add_cat);
+                add_cat.Dock = DockStyle.Top;
+            }
         }     
 
     }

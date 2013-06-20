@@ -124,7 +124,6 @@
             this.screen_drop.TabIndex = 63;
             this.screen_drop.DropDown += new System.EventHandler(this.screen_drop_DropDown);
             this.screen_drop.SelectedIndexChanged += new System.EventHandler(this.screen_drop_SelectedIndexChanged);
-            this.screen_drop.TextChanged += new System.EventHandler(this.screen_drop_SelectedIndexChanged);
             this.screen_drop.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_drop_KeyPress);
             // 
             // theater_drop
@@ -144,7 +143,7 @@
             this.label16.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.Location = new System.Drawing.Point(243, 84);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(24, 14);
+            this.label16.Size = new System.Drawing.Size(23, 14);
             this.label16.TabIndex = 61;
             this.label16.Text = "To:";
             // 
@@ -187,7 +186,6 @@
             this.timing_panel.Padding = new System.Windows.Forms.Padding(5);
             this.timing_panel.Size = new System.Drawing.Size(334, 65);
             this.timing_panel.TabIndex = 69;
-            this.timing_panel.Paint += new System.Windows.Forms.PaintEventHandler(this.timing_panel_Paint);
             // 
             // pictureBox1
             // 

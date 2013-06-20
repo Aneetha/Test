@@ -15,5 +15,10 @@ namespace Moive_shop
         {
             InitializeComponent();
         }
+
+        private void delete_timing_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
     }
 }

@@ -132,17 +132,5 @@ namespace Moive_shop
         {
 
         }
-
-        private void screen_drop_TextUpdate(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void timing_panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        
     }
 }

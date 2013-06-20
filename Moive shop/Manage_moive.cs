@@ -150,8 +150,6 @@ namespace Moive_shop
 
         private void close_Click(object sender, EventArgs e)
         {
-            common.manage_moive = new DataTable();
-
             common.movie = null;
             common.movie_theater = null;
             common.movie_preview = null;
