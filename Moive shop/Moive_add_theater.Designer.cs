@@ -50,7 +50,7 @@
             // 
             this.Bg.BackColor = System.Drawing.Color.Transparent;
             this.Bg.Image = ((System.Drawing.Image)(resources.GetObject("Bg.Image")));
-            this.Bg.Location = new System.Drawing.Point(4, 15);
+            this.Bg.Location = new System.Drawing.Point(3, 5);
             this.Bg.Name = "Bg";
             this.Bg.Size = new System.Drawing.Size(530, 736);
             this.Bg.TabIndex = 0;
@@ -64,7 +64,7 @@
             // 
             this.Add_theater_panel.AutoScroll = true;
             this.Add_theater_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
-            this.Add_theater_panel.Location = new System.Drawing.Point(21, 150);
+            this.Add_theater_panel.Location = new System.Drawing.Point(24, 140);
             this.Add_theater_panel.Name = "Add_theater_panel";
             this.Add_theater_panel.Size = new System.Drawing.Size(481, 525);
             this.Add_theater_panel.TabIndex = 2;
@@ -73,7 +73,7 @@
             // 
             this.Save.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.Save.Image = ((System.Drawing.Image)(resources.GetObject("Save.Image")));
-            this.Save.Location = new System.Drawing.Point(170, 695);
+            this.Save.Location = new System.Drawing.Point(169, 685);
             this.Save.Name = "Save";
             this.Save.Size = new System.Drawing.Size(82, 30);
             this.Save.TabIndex = 74;
@@ -84,7 +84,7 @@
             // 
             this.Add_more.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(227)))), ((int)(((byte)(227)))), ((int)(((byte)(227)))));
             this.Add_more.Image = ((System.Drawing.Image)(resources.GetObject("Add_more.Image")));
-            this.Add_more.Location = new System.Drawing.Point(258, 695);
+            this.Add_more.Location = new System.Drawing.Point(257, 685);
             this.Add_more.Name = "Add_more";
             this.Add_more.Size = new System.Drawing.Size(80, 29);
             this.Add_more.TabIndex = 73;
@@ -95,7 +95,7 @@
             // 
             this.theater_info_select.BackColor = System.Drawing.Color.White;
             this.theater_info_select.Image = ((System.Drawing.Image)(resources.GetObject("theater_info_select.Image")));
-            this.theater_info_select.Location = new System.Drawing.Point(143, 112);
+            this.theater_info_select.Location = new System.Drawing.Point(143, 96);
             this.theater_info_select.Name = "theater_info_select";
             this.theater_info_select.Size = new System.Drawing.Size(123, 34);
             this.theater_info_select.TabIndex = 75;
@@ -105,7 +105,7 @@
             // 
             this.movie_info_normal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.movie_info_normal.Image = ((System.Drawing.Image)(resources.GetObject("movie_info_normal.Image")));
-            this.movie_info_normal.Location = new System.Drawing.Point(21, 111);
+            this.movie_info_normal.Location = new System.Drawing.Point(20, 96);
             this.movie_info_normal.Name = "movie_info_normal";
             this.movie_info_normal.Size = new System.Drawing.Size(122, 33);
             this.movie_info_normal.TabIndex = 76;
@@ -116,7 +116,7 @@
             // 
             this.preview_normal.BackColor = System.Drawing.Color.WhiteSmoke;
             this.preview_normal.Image = ((System.Drawing.Image)(resources.GetObject("preview_normal.Image")));
-            this.preview_normal.Location = new System.Drawing.Point(265, 112);
+            this.preview_normal.Location = new System.Drawing.Point(264, 97);
             this.preview_normal.Name = "preview_normal";
             this.preview_normal.Size = new System.Drawing.Size(122, 33);
             this.preview_normal.TabIndex = 77;
@@ -127,7 +127,7 @@
             // 
             this.close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(21)))), ((int)(((byte)(21)))));
             this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
-            this.close.Location = new System.Drawing.Point(509, 29);
+            this.close.Location = new System.Drawing.Point(509, 21);
             this.close.Name = "close";
             this.close.Size = new System.Drawing.Size(10, 17);
             this.close.TabIndex = 78;
@@ -139,7 +139,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
-            this.ClientSize = new System.Drawing.Size(552, 780);
+            this.ClientSize = new System.Drawing.Size(540, 780);
             this.Controls.Add(this.close);
             this.Controls.Add(this.preview_normal);
             this.Controls.Add(this.theater_info_select);

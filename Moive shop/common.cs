@@ -33,6 +33,7 @@ namespace Moive_shop
         public static List<string> theater_drop = new List<string>();
         public static List<string> screen_drop = new List<string>();
         public static List<string> screen_timing = new List<string>();
+        public static List<string> edit_screen_timing = new List<string>();
         public static DataTable table = new DataTable();
         public static string remember_id = string.Empty;
         public static DataTable manage_moive = new DataTable();
@@ -51,30 +52,10 @@ namespace Moive_shop
        
 
         //..........................................................
-        public static DataTable t_s_table = new DataTable();
-        public static DataTable show_table = new DataTable();
-        public static bool edit_flag = false;
-
-
-        public static List<int> edit_seat_id = new List<int>();
-        public static List<string> edit_status = new List<string>();
-        public static List<string> edit_row_name = new List<string>();
-        public static List<int> edit_seat_no = new List<int>();
-        public static List<int> order_edit_seat_no = new List<int>();
-        public static List<int> row_edit_seat_no = new List<int>();
-        public static List<int> edit_cat_id = new List<int>();
-        public static List<int> tab_cat_id = new List<int>();
-        public static List<int> edit_tab_id = new List<int>();
-        public static List<string> edit_cat_name = new List<string>();
-        public static DataTable cat_table = new DataTable();
+    
 
 
 
-        public static List<string> categories_list = new List<string>();
-        public static List<string> show_timing_list = new List<string>();
-        public static string t_old_name = null;
-        public static string theater_drop_name = null;
 
-        public static bool m_edit_flag = false;
     }
 }

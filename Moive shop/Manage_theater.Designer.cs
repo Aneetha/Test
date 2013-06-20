@@ -31,7 +31,30 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Manage_theater));
             this.close = new System.Windows.Forms.PictureBox();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.pictureBox9 = new System.Windows.Forms.PictureBox();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.comboBox5 = new System.Windows.Forms.ComboBox();
+            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.am_pm = new System.Windows.Forms.ComboBox();
+            this.mins = new System.Windows.Forms.ComboBox();
+            this.hours = new System.Windows.Forms.ComboBox();
+            this.category_del = new System.Windows.Forms.PictureBox();
             this.category_add = new System.Windows.Forms.PictureBox();
+            this.delete_timing = new System.Windows.Forms.PictureBox();
             this.Add_timing = new System.Windows.Forms.PictureBox();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
@@ -40,6 +63,8 @@
             this.label23 = new System.Windows.Forms.Label();
             this.cancel = new System.Windows.Forms.PictureBox();
             this.save = new System.Windows.Forms.PictureBox();
+            this.price_txt = new System.Windows.Forms.TextBox();
+            this.category_txt = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
@@ -72,11 +97,29 @@
             this.availabToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.undoSpaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Backgorud_pic = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.comboBox8 = new System.Windows.Forms.ComboBox();
+            this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label11 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.pictureBox11 = new System.Windows.Forms.PictureBox();
+            this.pictureBox12 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_del)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.category_add)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delete_timing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Add_timing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancel)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.save)).BeginInit();
@@ -84,6 +127,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.theater_info_select)).BeginInit();
             this.contextMenuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Backgorud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).BeginInit();
             this.SuspendLayout();
             // 
             // close
@@ -97,32 +146,454 @@
             this.close.TabStop = false;
             this.close.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
+            // pictureBox10
+            // 
+            this.pictureBox10.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox10.Image")));
+            this.pictureBox10.Location = new System.Drawing.Point(192, 59);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox10.TabIndex = 67;
+            this.pictureBox10.TabStop = false;
+            // 
+            // pictureBox9
+            // 
+            this.pictureBox9.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox9.Image")));
+            this.pictureBox9.Location = new System.Drawing.Point(192, 32);
+            this.pictureBox9.Name = "pictureBox9";
+            this.pictureBox9.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox9.TabIndex = 66;
+            this.pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(217, 59);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox8.TabIndex = 65;
+            this.pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
+            this.pictureBox7.Location = new System.Drawing.Point(217, 31);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox7.TabIndex = 64;
+            this.pictureBox7.TabStop = false;
+            // 
+            // comboBox4
+            // 
+            this.comboBox4.FormattingEnabled = true;
+            this.comboBox4.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.comboBox4.Location = new System.Drawing.Point(135, 59);
+            this.comboBox4.Name = "comboBox4";
+            this.comboBox4.Size = new System.Drawing.Size(51, 21);
+            this.comboBox4.TabIndex = 63;
+            // 
+            // comboBox5
+            // 
+            this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.comboBox5.Location = new System.Drawing.Point(76, 60);
+            this.comboBox5.Name = "comboBox5";
+            this.comboBox5.Size = new System.Drawing.Size(53, 21);
+            this.comboBox5.TabIndex = 62;
+            // 
+            // comboBox6
+            // 
+            this.comboBox6.FormattingEnabled = true;
+            this.comboBox6.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.comboBox6.Location = new System.Drawing.Point(19, 59);
+            this.comboBox6.Name = "comboBox6";
+            this.comboBox6.Size = new System.Drawing.Size(51, 21);
+            this.comboBox6.TabIndex = 61;
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.comboBox1.Location = new System.Drawing.Point(135, 32);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(51, 21);
+            this.comboBox1.TabIndex = 60;
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.comboBox2.Location = new System.Drawing.Point(76, 33);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(53, 21);
+            this.comboBox2.TabIndex = 59;
+            // 
+            // comboBox3
+            // 
+            this.comboBox3.FormattingEnabled = true;
+            this.comboBox3.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.comboBox3.Location = new System.Drawing.Point(19, 32);
+            this.comboBox3.Name = "comboBox3";
+            this.comboBox3.Size = new System.Drawing.Size(51, 21);
+            this.comboBox3.TabIndex = 58;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
+            this.pictureBox5.Location = new System.Drawing.Point(210, 62);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox5.TabIndex = 57;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
+            this.pictureBox6.Location = new System.Drawing.Point(185, 62);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox6.TabIndex = 56;
+            this.pictureBox6.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(117, 62);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(64, 20);
+            this.textBox3.TabIndex = 55;
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(13, 62);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(98, 20);
+            this.textBox4.TabIndex = 54;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(209, 35);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox3.TabIndex = 53;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
+            this.pictureBox4.Location = new System.Drawing.Point(185, 35);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox4.TabIndex = 52;
+            this.pictureBox4.TabStop = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(116, 36);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(64, 20);
+            this.textBox1.TabIndex = 51;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(12, 36);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(98, 20);
+            this.textBox2.TabIndex = 50;
+            // 
+            // am_pm
+            // 
+            this.am_pm.FormattingEnabled = true;
+            this.am_pm.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.am_pm.Location = new System.Drawing.Point(135, 5);
+            this.am_pm.Name = "am_pm";
+            this.am_pm.Size = new System.Drawing.Size(51, 21);
+            this.am_pm.TabIndex = 49;
+            this.am_pm.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_dropdown_KeyPress);
+            // 
+            // mins
+            // 
+            this.mins.FormattingEnabled = true;
+            this.mins.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.mins.Location = new System.Drawing.Point(76, 6);
+            this.mins.Name = "mins";
+            this.mins.Size = new System.Drawing.Size(53, 21);
+            this.mins.TabIndex = 48;
+            this.mins.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_dropdown_KeyPress);
+            // 
+            // hours
+            // 
+            this.hours.FormattingEnabled = true;
+            this.hours.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.hours.Location = new System.Drawing.Point(19, 5);
+            this.hours.Name = "hours";
+            this.hours.Size = new System.Drawing.Size(51, 21);
+            this.hours.TabIndex = 47;
+            this.hours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_dropdown_KeyPress);
+            // 
+            // category_del
+            // 
+            this.category_del.Image = ((System.Drawing.Image)(resources.GetObject("category_del.Image")));
+            this.category_del.Location = new System.Drawing.Point(210, 7);
+            this.category_del.Name = "category_del";
+            this.category_del.Size = new System.Drawing.Size(19, 18);
+            this.category_del.TabIndex = 44;
+            this.category_del.TabStop = false;
+            // 
             // category_add
             // 
             this.category_add.Image = ((System.Drawing.Image)(resources.GetObject("category_add.Image")));
-            this.category_add.Location = new System.Drawing.Point(372, 532);
+            this.category_add.Location = new System.Drawing.Point(186, 7);
             this.category_add.Name = "category_add";
             this.category_add.Size = new System.Drawing.Size(19, 18);
             this.category_add.TabIndex = 43;
             this.category_add.TabStop = false;
-            this.category_add.Click += new System.EventHandler(this.category_add_Click);
+            // 
+            // delete_timing
+            // 
+            this.delete_timing.Image = ((System.Drawing.Image)(resources.GetObject("delete_timing.Image")));
+            this.delete_timing.Location = new System.Drawing.Point(217, 6);
+            this.delete_timing.Name = "delete_timing";
+            this.delete_timing.Size = new System.Drawing.Size(19, 18);
+            this.delete_timing.TabIndex = 42;
+            this.delete_timing.TabStop = false;
             // 
             // Add_timing
             // 
             this.Add_timing.Image = ((System.Drawing.Image)(resources.GetObject("Add_timing.Image")));
-            this.Add_timing.Location = new System.Drawing.Point(371, 360);
+            this.Add_timing.Location = new System.Drawing.Point(192, 6);
             this.Add_timing.Name = "Add_timing";
             this.Add_timing.Size = new System.Drawing.Size(19, 18);
             this.Add_timing.TabIndex = 41;
             this.Add_timing.TabStop = false;
-            this.Add_timing.Click += new System.EventHandler(this.Add_timing_Click);
             // 
             // label27
             // 
             this.label27.AutoSize = true;
             this.label27.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label27.ForeColor = System.Drawing.Color.Red;
-            this.label27.Location = new System.Drawing.Point(394, 362);
+            this.label27.Location = new System.Drawing.Point(242, 7);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(13, 16);
             this.label27.TabIndex = 39;
@@ -185,7 +656,6 @@
             this.cancel.Size = new System.Drawing.Size(84, 29);
             this.cancel.TabIndex = 33;
             this.cancel.TabStop = false;
-            this.cancel.Click += new System.EventHandler(this.cancel_Click);
             // 
             // save
             // 
@@ -197,6 +667,20 @@
             this.save.TabIndex = 32;
             this.save.TabStop = false;
             this.save.Click += new System.EventHandler(this.save_Click);
+            // 
+            // price_txt
+            // 
+            this.price_txt.Location = new System.Drawing.Point(116, 6);
+            this.price_txt.Name = "price_txt";
+            this.price_txt.Size = new System.Drawing.Size(64, 20);
+            this.price_txt.TabIndex = 31;
+            // 
+            // category_txt
+            // 
+            this.category_txt.Location = new System.Drawing.Point(12, 6);
+            this.category_txt.Name = "category_txt";
+            this.category_txt.Size = new System.Drawing.Size(98, 20);
+            this.category_txt.TabIndex = 30;
             // 
             // label13
             // 
@@ -239,7 +723,7 @@
             this.theater_inactive.Location = new System.Drawing.Point(266, 482);
             this.theater_inactive.Name = "theater_inactive";
             this.theater_inactive.Size = new System.Drawing.Size(67, 18);
-            this.theater_inactive.TabIndex = 22;
+            this.theater_inactive.TabIndex = 26;
             this.theater_inactive.Text = "Inactive";
             this.theater_inactive.UseVisualStyleBackColor = false;
             // 
@@ -252,7 +736,7 @@
             this.theater_active.Location = new System.Drawing.Point(176, 482);
             this.theater_active.Name = "theater_active";
             this.theater_active.Size = new System.Drawing.Size(59, 18);
-            this.theater_active.TabIndex = 21;
+            this.theater_active.TabIndex = 25;
             this.theater_active.TabStop = true;
             this.theater_active.Text = "Active";
             this.theater_active.UseVisualStyleBackColor = false;
@@ -284,16 +768,14 @@
             this.theater_longitude.Location = new System.Drawing.Point(266, 328);
             this.theater_longitude.Name = "theater_longitude";
             this.theater_longitude.Size = new System.Drawing.Size(78, 20);
-            this.theater_longitude.TabIndex = 8;
-            this.theater_longitude.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_longitude_KeyPress);
+            this.theater_longitude.TabIndex = 19;
             // 
             // theater_latitude
             // 
-            this.theater_latitude.Location = new System.Drawing.Point(169, 328);
+            this.theater_latitude.Location = new System.Drawing.Point(176, 328);
             this.theater_latitude.Name = "theater_latitude";
-            this.theater_latitude.Size = new System.Drawing.Size(82, 20);
-            this.theater_latitude.TabIndex = 7;
-            this.theater_latitude.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_latitude_KeyPress);
+            this.theater_latitude.Size = new System.Drawing.Size(75, 20);
+            this.theater_latitude.TabIndex = 18;
             // 
             // label9
             // 
@@ -330,35 +812,31 @@
             // 
             // sate_txt
             // 
-            this.sate_txt.Location = new System.Drawing.Point(170, 286);
+            this.sate_txt.Location = new System.Drawing.Point(176, 286);
             this.sate_txt.Name = "sate_txt";
-            this.sate_txt.Size = new System.Drawing.Size(174, 20);
-            this.sate_txt.TabIndex = 6;
-            this.sate_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.sate_txt_KeyPress);
+            this.sate_txt.Size = new System.Drawing.Size(168, 20);
+            this.sate_txt.TabIndex = 14;
             // 
             // theater_city_txt
             // 
-            this.theater_city_txt.Location = new System.Drawing.Point(170, 251);
+            this.theater_city_txt.Location = new System.Drawing.Point(176, 251);
             this.theater_city_txt.Name = "theater_city_txt";
-            this.theater_city_txt.Size = new System.Drawing.Size(174, 20);
-            this.theater_city_txt.TabIndex = 5;
-            this.theater_city_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_city_txt_KeyPress);
+            this.theater_city_txt.Size = new System.Drawing.Size(168, 20);
+            this.theater_city_txt.TabIndex = 13;
             // 
             // theater_location_txt
             // 
-            this.theater_location_txt.Location = new System.Drawing.Point(170, 216);
+            this.theater_location_txt.Location = new System.Drawing.Point(176, 216);
             this.theater_location_txt.Name = "theater_location_txt";
-            this.theater_location_txt.Size = new System.Drawing.Size(174, 20);
-            this.theater_location_txt.TabIndex = 4;
-            this.theater_location_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_location_txt_KeyPress);
+            this.theater_location_txt.Size = new System.Drawing.Size(168, 20);
+            this.theater_location_txt.TabIndex = 12;
             // 
             // theater_Screen_name_txt
             // 
-            this.theater_Screen_name_txt.Location = new System.Drawing.Point(170, 180);
+            this.theater_Screen_name_txt.Location = new System.Drawing.Point(176, 180);
             this.theater_Screen_name_txt.Name = "theater_Screen_name_txt";
-            this.theater_Screen_name_txt.Size = new System.Drawing.Size(174, 20);
-            this.theater_Screen_name_txt.TabIndex = 3;
-            this.theater_Screen_name_txt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_Screen_name_txt_KeyPress);
+            this.theater_Screen_name_txt.Size = new System.Drawing.Size(168, 20);
+            this.theater_Screen_name_txt.TabIndex = 11;
             // 
             // label6
             // 
@@ -409,8 +887,7 @@
             this.theater_text.Location = new System.Drawing.Point(378, 144);
             this.theater_text.Name = "theater_text";
             this.theater_text.Size = new System.Drawing.Size(160, 20);
-            this.theater_text.TabIndex = 2;
-            this.theater_text.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_text_KeyPress);
+            this.theater_text.TabIndex = 6;
             // 
             // label2
             // 
@@ -437,10 +914,10 @@
             // theater_dropdown
             // 
             this.theater_dropdown.FormattingEnabled = true;
-            this.theater_dropdown.Location = new System.Drawing.Point(170, 143);
+            this.theater_dropdown.Location = new System.Drawing.Point(176, 143);
             this.theater_dropdown.Name = "theater_dropdown";
-            this.theater_dropdown.Size = new System.Drawing.Size(174, 21);
-            this.theater_dropdown.TabIndex = 1;
+            this.theater_dropdown.Size = new System.Drawing.Size(168, 21);
+            this.theater_dropdown.TabIndex = 3;
             this.theater_dropdown.DropDown += new System.EventHandler(this.theater_dropdown_SelectedIndexChanged);
             this.theater_dropdown.SelectedIndexChanged += new System.EventHandler(this.theater_dropdown_SelectedIndexChanged_1);
             this.theater_dropdown.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.theater_dropdown_KeyPress);
@@ -465,6 +942,7 @@
             this.theater_info_select.Size = new System.Drawing.Size(121, 31);
             this.theater_info_select.TabIndex = 1;
             this.theater_info_select.TabStop = false;
+            this.theater_info_select.Click += new System.EventHandler(this.theater_info_select_Click);
             // 
             // contextMenuStrip1
             // 
@@ -513,34 +991,209 @@
             this.Backgorud_pic.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseMove);
             this.Backgorud_pic.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pictureBox1_MouseUp);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(192, 86);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox1.TabIndex = 72;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(217, 86);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox2.TabIndex = 71;
+            this.pictureBox2.TabStop = false;
+            // 
+            // comboBox7
+            // 
+            this.comboBox7.FormattingEnabled = true;
+            this.comboBox7.Items.AddRange(new object[] {
+            "AM",
+            "PM"});
+            this.comboBox7.Location = new System.Drawing.Point(135, 86);
+            this.comboBox7.Name = "comboBox7";
+            this.comboBox7.Size = new System.Drawing.Size(51, 21);
+            this.comboBox7.TabIndex = 70;
+            // 
+            // comboBox8
+            // 
+            this.comboBox8.FormattingEnabled = true;
+            this.comboBox8.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15",
+            "16",
+            "17",
+            "18",
+            "19",
+            "20",
+            "21",
+            "22",
+            "23",
+            "24",
+            "25",
+            "26",
+            "27",
+            "28",
+            "29",
+            "30",
+            "31",
+            "32",
+            "33",
+            "34",
+            "35",
+            "36",
+            "37",
+            "38",
+            "39",
+            "40",
+            "41",
+            "42",
+            "43",
+            "44",
+            "45",
+            "46",
+            "47",
+            "48",
+            "49",
+            "50",
+            "51",
+            "52",
+            "53",
+            "54",
+            "55",
+            "56",
+            "57",
+            "58",
+            "59",
+            "60"});
+            this.comboBox8.Location = new System.Drawing.Point(76, 87);
+            this.comboBox8.Name = "comboBox8";
+            this.comboBox8.Size = new System.Drawing.Size(53, 21);
+            this.comboBox8.TabIndex = 69;
+            // 
+            // comboBox9
+            // 
+            this.comboBox9.FormattingEnabled = true;
+            this.comboBox9.Items.AddRange(new object[] {
+            "01",
+            "02",
+            "03",
+            "04",
+            "05",
+            "06",
+            "07",
+            "08",
+            "09",
+            "10",
+            "11",
+            "12"});
+            this.comboBox9.Location = new System.Drawing.Point(19, 86);
+            this.comboBox9.Name = "comboBox9";
+            this.comboBox9.Size = new System.Drawing.Size(51, 21);
+            this.comboBox9.TabIndex = 68;
+            // 
             // panel1
             // 
-            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.panel1.Location = new System.Drawing.Point(169, 355);
+            this.panel1.Controls.Add(this.hours);
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.label27);
+            this.panel1.Controls.Add(this.pictureBox2);
+            this.panel1.Controls.Add(this.Add_timing);
+            this.panel1.Controls.Add(this.comboBox7);
+            this.panel1.Controls.Add(this.delete_timing);
+            this.panel1.Controls.Add(this.comboBox8);
+            this.panel1.Controls.Add(this.mins);
+            this.panel1.Controls.Add(this.comboBox9);
+            this.panel1.Controls.Add(this.am_pm);
+            this.panel1.Controls.Add(this.comboBox3);
+            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.pictureBox10);
+            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.pictureBox9);
+            this.panel1.Controls.Add(this.comboBox6);
+            this.panel1.Controls.Add(this.comboBox5);
+            this.panel1.Controls.Add(this.pictureBox8);
+            this.panel1.Controls.Add(this.comboBox4);
+            this.panel1.Controls.Add(this.pictureBox7);
+            this.panel1.Location = new System.Drawing.Point(155, 355);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(201, 118);
+            this.panel1.Size = new System.Drawing.Size(280, 118);
             this.panel1.TabIndex = 73;
             // 
             // panel2
             // 
-            this.panel2.AutoScroll = true;
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
-            this.panel2.Location = new System.Drawing.Point(169, 527);
+            this.panel2.Controls.Add(this.textBox5);
+            this.panel2.Controls.Add(this.textBox6);
+            this.panel2.Controls.Add(this.pictureBox11);
+            this.panel2.Controls.Add(this.pictureBox12);
+            this.panel2.Controls.Add(this.category_add);
+            this.panel2.Controls.Add(this.price_txt);
+            this.panel2.Controls.Add(this.category_txt);
+            this.panel2.Controls.Add(this.category_del);
+            this.panel2.Controls.Add(this.textBox2);
+            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.pictureBox4);
+            this.panel2.Controls.Add(this.pictureBox3);
+            this.panel2.Controls.Add(this.textBox4);
+            this.panel2.Controls.Add(this.textBox3);
+            this.panel2.Controls.Add(this.pictureBox6);
+            this.panel2.Controls.Add(this.pictureBox5);
+            this.panel2.Location = new System.Drawing.Point(157, 527);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(201, 118);
+            this.panel2.Size = new System.Drawing.Size(280, 118);
             this.panel2.TabIndex = 74;
             // 
-            // label11
+            // textBox5
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Red;
-            this.label11.Location = new System.Drawing.Point(395, 533);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(13, 16);
-            this.label11.TabIndex = 75;
-            this.label11.Text = "*";
+            this.textBox5.Location = new System.Drawing.Point(12, 88);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(98, 20);
+            this.textBox5.TabIndex = 58;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(116, 88);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(64, 20);
+            this.textBox6.TabIndex = 59;
+            // 
+            // pictureBox11
+            // 
+            this.pictureBox11.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox11.Image")));
+            this.pictureBox11.Location = new System.Drawing.Point(184, 88);
+            this.pictureBox11.Name = "pictureBox11";
+            this.pictureBox11.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox11.TabIndex = 60;
+            this.pictureBox11.TabStop = false;
+            // 
+            // pictureBox12
+            // 
+            this.pictureBox12.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox12.Image")));
+            this.pictureBox12.Location = new System.Drawing.Point(209, 88);
+            this.pictureBox12.Name = "pictureBox12";
+            this.pictureBox12.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox12.TabIndex = 61;
+            this.pictureBox12.TabStop = false;
             // 
             // Manage_theater
             // 
@@ -548,13 +1201,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Linen;
             this.ClientSize = new System.Drawing.Size(622, 741);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.label27);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.category_add);
             this.Controls.Add(this.seat_manage_normal);
-            this.Controls.Add(this.Add_timing);
             this.Controls.Add(this.theater_info_select);
             this.Controls.Add(this.close);
             this.Controls.Add(this.label1);
@@ -596,7 +1245,17 @@
             this.TransparencyKey = System.Drawing.Color.Linen;
             this.Load += new System.EventHandler(this.Manage_theater_Load);
             ((System.ComponentModel.ISupportInitialize)(this.close)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.category_del)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.category_add)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.delete_timing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Add_timing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cancel)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.save)).EndInit();
@@ -604,6 +1263,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.theater_info_select)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Backgorud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox12)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -618,6 +1285,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox theater_dropdown;
+        private System.Windows.Forms.TextBox price_txt;
+        private System.Windows.Forms.TextBox category_txt;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
@@ -650,12 +1319,43 @@
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.ToolStripMenuItem undoSpaceToolStripMenuItem;
+        private System.Windows.Forms.ComboBox comboBox4;
+        private System.Windows.Forms.ComboBox comboBox5;
+        private System.Windows.Forms.ComboBox comboBox6;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.PictureBox pictureBox6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.ComboBox am_pm;
+        private System.Windows.Forms.ComboBox mins;
+        private System.Windows.Forms.ComboBox hours;
         private System.Windows.Forms.PictureBox Add_timing;
+        private System.Windows.Forms.PictureBox pictureBox10;
+        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox category_del;
         private System.Windows.Forms.PictureBox category_add;
+        private System.Windows.Forms.PictureBox delete_timing;
         private System.Windows.Forms.PictureBox Backgorud_pic;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.ComboBox comboBox7;
+        private System.Windows.Forms.ComboBox comboBox8;
+        private System.Windows.Forms.ComboBox comboBox9;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.PictureBox pictureBox11;
+        private System.Windows.Forms.PictureBox pictureBox12;
 
 
     }

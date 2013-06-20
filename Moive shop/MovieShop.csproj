@@ -54,12 +54,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="add_category.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="add_category.Designer.cs">
-      <DependentUpon>add_category.cs</DependentUpon>
-    </Compile>
     <Compile Include="common.cs" />
     <Compile Include="db_query.cs" />
     <Compile Include="Manage_moive.cs">
@@ -118,9 +112,6 @@
     <Compile Include="theater_Seating.Designer.cs">
       <DependentUpon>theater_Seating.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="add_category.resx">
-      <DependentUpon>add_category.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="add_timing.resx">
       <DependentUpon>add_timing.cs</DependentUpon>
     </EmbeddedResource>

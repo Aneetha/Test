@@ -28,11 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(theater_Seating));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.close = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox11 = new System.Windows.Forms.PictureBox();
@@ -57,11 +56,6 @@
             this.label11 = new System.Windows.Forms.Label();
             this.Background = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.spaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.holdedToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.undospaceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.availableToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox11)).BeginInit();
@@ -73,7 +67,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Theater_info_normal)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            this.contextMenuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // close
@@ -121,32 +114,31 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.ColumnHeadersVisible = false;
             this.dataGridView1.Cursor = System.Windows.Forms.Cursors.Hand;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle7;
             this.dataGridView1.Location = new System.Drawing.Point(113, 265);
             this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle5.Format = "row1";
-            dataGridViewCellStyle5.NullValue = null;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.Format = "row1";
+            dataGridViewCellStyle8.NullValue = null;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.dataGridView1.RowHeadersVisible = false;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridView1.RowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dataGridView1.Size = new System.Drawing.Size(677, 272);
             this.dataGridView1.TabIndex = 5;
-            this.dataGridView1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseClick);
             // 
             // label16
             // 
@@ -242,7 +234,6 @@
             // rows_text
             // 
             this.rows_text.Location = new System.Drawing.Point(121, 177);
-            this.rows_text.MaxLength = 7;
             this.rows_text.Name = "rows_text";
             this.rows_text.Size = new System.Drawing.Size(42, 20);
             this.rows_text.TabIndex = 13;
@@ -250,7 +241,6 @@
             // cols_txt
             // 
             this.cols_txt.Location = new System.Drawing.Point(284, 177);
-            this.cols_txt.MaxLength = 7;
             this.cols_txt.Name = "cols_txt";
             this.cols_txt.Size = new System.Drawing.Size(42, 20);
             this.cols_txt.TabIndex = 14;
@@ -264,7 +254,6 @@
             this.seat_prev.Size = new System.Drawing.Size(84, 28);
             this.seat_prev.TabIndex = 16;
             this.seat_prev.TabStop = false;
-            this.seat_prev.Click += new System.EventHandler(this.seat_prev_Click_1);
             // 
             // sseat_save
             // 
@@ -275,8 +264,6 @@
             this.sseat_save.Size = new System.Drawing.Size(66, 28);
             this.sseat_save.TabIndex = 17;
             this.sseat_save.TabStop = false;
-            this.sseat_save.Visible = false;
-            this.sseat_save.Click += new System.EventHandler(this.sseat_save_Click);
             // 
             // label21
             // 
@@ -358,49 +345,11 @@
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(241)))), ((int)(((byte)(241)))));
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(227, 228);
+            this.pictureBox2.Location = new System.Drawing.Point(187, 228);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(564, 50);
             this.pictureBox2.TabIndex = 52;
             this.pictureBox2.TabStop = false;
-            // 
-            // contextMenuStrip1
-            // 
-            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.spaceToolStripMenuItem,
-            this.holdedToolStripMenuItem,
-            this.undospaceToolStripMenuItem,
-            this.availableToolStripMenuItem});
-            this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 114);
-            // 
-            // spaceToolStripMenuItem
-            // 
-            this.spaceToolStripMenuItem.Name = "spaceToolStripMenuItem";
-            this.spaceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.spaceToolStripMenuItem.Text = "Space";
-            this.spaceToolStripMenuItem.Click += new System.EventHandler(this.spaceToolStripMenuItem_Click);
-            // 
-            // holdedToolStripMenuItem
-            // 
-            this.holdedToolStripMenuItem.Name = "holdedToolStripMenuItem";
-            this.holdedToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.holdedToolStripMenuItem.Text = "Hold";
-            this.holdedToolStripMenuItem.Click += new System.EventHandler(this.holdedToolStripMenuItem_Click);
-            // 
-            // undospaceToolStripMenuItem
-            // 
-            this.undospaceToolStripMenuItem.Name = "undospaceToolStripMenuItem";
-            this.undospaceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.undospaceToolStripMenuItem.Text = "Undo-space";
-            this.undospaceToolStripMenuItem.Click += new System.EventHandler(this.undospaceToolStripMenuItem_Click);
-            // 
-            // availableToolStripMenuItem
-            // 
-            this.availableToolStripMenuItem.Name = "availableToolStripMenuItem";
-            this.availableToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.availableToolStripMenuItem.Text = "Available";
-            this.availableToolStripMenuItem.Click += new System.EventHandler(this.availableToolStripMenuItem_Click);
             // 
             // theater_Seating
             // 
@@ -450,7 +399,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.Theater_info_normal)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,10 +430,5 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox Background;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem spaceToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem holdedToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem availableToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem undospaceToolStripMenuItem;
     }
 }

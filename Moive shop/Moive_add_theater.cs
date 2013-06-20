@@ -49,7 +49,31 @@ namespace Moive_shop
            // MessageBox.Show(common.manage_moive.Rows[0].ItemArray[0].ToString());
             if (Add_theater_panel.Controls.Count <= 0)
             {
-                Add_more_Click(Add_more, null);
+                if (common.moive_edit == true)
+                {
+                    for (int i = 0; i < common.manage_theater.Rows.Count; i++)
+                    {
+                        Add_more_Click(Add_more, null);
+                        Add_theater_panel.Controls[i].Controls[9].Text = common.manage_theater.Rows[i].ItemArray[0].ToString();
+                        Add_theater_panel.Controls[i].Controls[8].Text = common.manage_theater.Rows[i].ItemArray[1].ToString();
+                        Add_theater_panel.Controls[i].Controls[7].Text = common.manage_theater.Rows[i].ItemArray[2].ToString();
+                        Add_theater_panel.Controls[i].Controls[6].Text = common.manage_theater.Rows[i].ItemArray[3].ToString();
+                        string query = "select tst.show_timing from theater_master tm, table_screen s, table_showing ts,table_movie_details m, table_screen_timing tst where tm.theater_name = '" + common.manage_theater.Rows[i].ItemArray[0].ToString() + "' and s.screen_name = '" + common.manage_theater.Rows[i].ItemArray[1].ToString()+"' and ts.movie_id=m.movie_id and ts.theater_id = tm.theater_id and s.screen_id = ts.screen_id and ts.show_timing_id=tst.show_timing_id;";
+                       db_query.edit_timing(query);
+                       for (int j = 0; j < Add_theater_panel.Controls[i].Controls[14].Controls.Count; j++)
+                       {
+                           //for(int k=0;
+                       }
+
+
+                    }
+                }
+                else
+                {
+
+
+                    Add_more_Click(Add_more, null);
+                }
             }
         }
 
@@ -140,7 +164,7 @@ namespace Moive_shop
                         CheckBox check = Add_theater_panel.Controls[i].Controls[14].Controls[k] as CheckBox;
                         if (check.Checked == true)
                         {
-                             //MessageBox.Show(Add_theater_panel.Controls[i].Controls[9].Text + "---" + Add_theater_panel.Controls[i].Controls[8].Text + "----" + Add_theater_panel.Controls[i].Controls[7].Text + "-------" + Add_theater_panel.Controls[i].Controls[6].Text + "-----" + Add_theater_panel.Controls[i].Controls[14].Controls[k].Text);
+                             MessageBox.Show(Add_theater_panel.Controls[i].Controls[9].Text + "---" + Add_theater_panel.Controls[i].Controls[8].Text + "----" + Add_theater_panel.Controls[i].Controls[7].Text + "-------" + Add_theater_panel.Controls[i].Controls[6].Text + "-----" + Add_theater_panel.Controls[i].Controls[14].Controls[k].Text);
                         }
                     
                     }

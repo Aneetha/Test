@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.min = new System.Windows.Forms.PictureBox();
@@ -84,7 +83,7 @@
             this.no_record = new System.Windows.Forms.Label();
             this.theater_panel = new System.Windows.Forms.Panel();
             this.theater_showall = new System.Windows.Forms.PictureBox();
-            this.theater_search_button = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.theater_screen_dropdown = new System.Windows.Forms.ComboBox();
@@ -117,7 +116,7 @@
             this.main_panel.SuspendLayout();
             this.theater_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theater_showall)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.theater_search_button)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.theater_add)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.theater_search)).BeginInit();
             this.SuspendLayout();
@@ -654,7 +653,7 @@
             this.theater_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
             this.theater_panel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.theater_panel.Controls.Add(this.theater_showall);
-            this.theater_panel.Controls.Add(this.theater_search_button);
+            this.theater_panel.Controls.Add(this.pictureBox2);
             this.theater_panel.Controls.Add(this.label2);
             this.theater_panel.Controls.Add(this.label1);
             this.theater_panel.Controls.Add(this.theater_screen_dropdown);
@@ -675,15 +674,15 @@
             this.theater_showall.TabStop = false;
             this.theater_showall.Click += new System.EventHandler(this.theater_showall_Click);
             // 
-            // theater_search_button
+            // pictureBox2
             // 
-            this.theater_search_button.Image = ((System.Drawing.Image)(resources.GetObject("theater_search_button.Image")));
-            this.theater_search_button.Location = new System.Drawing.Point(498, 33);
-            this.theater_search_button.Name = "theater_search_button";
-            this.theater_search_button.Size = new System.Drawing.Size(66, 27);
-            this.theater_search_button.TabIndex = 4;
-            this.theater_search_button.TabStop = false;
-            this.theater_search_button.Click += new System.EventHandler(this.pictureBox2_Click);
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(498, 33);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(66, 27);
+            this.pictureBox2.TabIndex = 4;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // label2
             // 
@@ -741,23 +740,16 @@
             this.theater_search.AllowUserToAddRows = false;
             this.theater_search.AllowUserToDeleteRows = false;
             this.theater_search.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(234)))), ((int)(((byte)(234)))));
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.theater_search.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.theater_search.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.theater_search.ColumnHeadersVisible = false;
             this.theater_search.Location = new System.Drawing.Point(6, 110);
             this.theater_search.Name = "theater_search";
             this.theater_search.ReadOnly = true;
             this.theater_search.RowHeadersVisible = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            this.theater_search.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            this.theater_search.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.theater_search.Size = new System.Drawing.Size(759, 400);
             this.theater_search.TabIndex = 1;
-            this.theater_search.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.theater_search_CellClick);
             this.theater_search.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.theater_search_CellContentClick);
             // 
             // panel4
@@ -819,7 +811,7 @@
             this.theater_panel.ResumeLayout(false);
             this.theater_panel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.theater_showall)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.theater_search_button)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.theater_add)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.theater_search)).EndInit();
             this.ResumeLayout(false);
@@ -851,7 +843,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ComboBox theater_screen_dropdown;
         private System.Windows.Forms.ComboBox theater_theater_dropdown;
-        private System.Windows.Forms.PictureBox theater_search_button;
+        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox theater_showall;
         private System.Windows.Forms.PictureBox theater_add;
         private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;

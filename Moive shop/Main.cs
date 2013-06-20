@@ -46,8 +46,8 @@ namespace Moive_shop
             theater_panel.Visible = true;
             movie_panel.Visible = false;
             booking_panel.Visible = false;
-            db_query.theater_show_all();
-            theater_search.DataSource = common.show_table;
+            db_query.search_theater("none", "");
+            theater_search.DataSource = common.table;
             datagird_style();
                        
         }
@@ -55,11 +55,6 @@ namespace Moive_shop
         {
             try
             {
-                theater_search.Columns[0].HeaderText = "Theater Name";
-                theater_search.Columns[1].HeaderText = "Screen Name";
-                theater_search.Columns[2].HeaderText = "Location";
-                theater_search.Columns[3].HeaderText = "City";
-                theater_search.Columns[4].HeaderText = "Status";
                 if (!theater_search.Columns.Contains("edit"))
                 {
                     DataGridViewImageColumn edit = new DataGridViewImageColumn();
@@ -166,17 +161,25 @@ namespace Moive_shop
             movie_panel.Visible = false;
             
         }
+
+       
+
         private void theater_add_Click(object sender, EventArgs e)
         {
-            common.edit_flag = false;
-            Manage_theater add = new Manage_theater();
+             Manage_theater add = new Manage_theater();
             add.ShowDialog();
         }
         public static void seat_manage()
         {
+            
             theater_Seating seat = new theater_Seating();
             seat.ShowDialog();
+           
+
         }
+
+      
+
         private void moive_add_Click(object sender, EventArgs e)
         {
             Manage_moive add = new Manage_moive();
@@ -185,22 +188,15 @@ namespace Moive_shop
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            try
+            if (!string.IsNullOrEmpty(theater_theater_dropdown.Text.Trim()+ theater_screen_dropdown.Text.Trim()))
             {
-                if (!string.IsNullOrEmpty(theater_theater_dropdown.Text.Trim() + theater_screen_dropdown.Text.Trim()))
-                {
-                    db_query.search_theater(theater_theater_dropdown.Text, theater_screen_dropdown.Text);
-                    theater_search.DataSource = common.t_s_table;
-                    //datagird_style();
-                }
-                else
-                {
-                    MessageBox.Show("Please select any Filters to search.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                db_query.search_theater(theater_theater_dropdown.Text, theater_screen_dropdown.Text);
+                theater_search.DataSource = common.table;    
+                                                
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Please select any Filters to search.", "Movie Shop", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -471,23 +467,19 @@ namespace Moive_shop
             if (e.ColumnIndex == theater_search.Columns.Count - 2 && movie_panel.Visible==true)
             {
                string query = "select movie_name, release_date, director,genre,written,language,run_time,image,video,featured,status,descrip from table_movie_details where movie_name = '"+theater_search.CurrentRow.Cells[0].Value.ToString().Trim()+"' and language ='"+theater_search.CurrentRow.Cells[6].Value.ToString().Trim()+"'";
-               db_query.moive_edit(query);
+
+               string query1 = "select tm.theater_name,s.screen_name,min(ts.date),max(ts.date) from theater_master tm, table_screen s, table_showing ts,table_movie_details m where m.movie_name ='" + theater_search.CurrentRow.Cells[0].Value.ToString().Trim() + "' and m.language like '" + theater_search.CurrentRow.Cells[6].Value.ToString().Trim() + "' and ts.movie_id=m.movie_id and ts.theater_id = tm.theater_id and s.screen_id = ts.screen_id group by theater_name and screen_name";
+                db_query.moive_edit(query,query1);
                common.moive_edit = true;
                Manage_moive movie = new Manage_moive();
                movie.ShowDialog();
-
+               common.moive_edit = false;
 
             }
         }
 
         private void theater_theater_dropdown_DropDown(object sender, EventArgs e)
         {
-            //db_query.theater_drop();
-            //theater_theater_dropdown.Items.Clear();
-            //for (int index = 0; index < common.theater_drop.Count; index++)
-            //{
-            //    theater_theater_dropdown.Items.Add(common.theater_drop[index]);
-            //}
             db_query.theater_drop();
             theater_theater_dropdown.Items.Clear();
             moive_theater_drop.Items.Clear();
@@ -502,7 +494,7 @@ namespace Moive_shop
 
         private void theater_screen_dropdown_DropDown(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(theater_theater_dropdown.Text.Trim()) && theater_panel.Visible==true)
+            if (!string.IsNullOrEmpty(theater_theater_dropdown.Text.Trim()))
             {
                 db_query.screen_drop(theater_theater_dropdown.Text.Trim());
                 theater_screen_dropdown.Items.Clear();
@@ -512,7 +504,7 @@ namespace Moive_shop
                 }
 
             }
-            else if (!string.IsNullOrEmpty(moive_theater_drop.Text.Trim()) && movie_panel.Visible==true)
+            else if (!string.IsNullOrEmpty(moive_theater_drop.Text.Trim()))
             {
                 db_query.screen_drop(moive_theater_drop.Text.Trim());
                 moive_screen_drop.Items.Clear();
@@ -520,6 +512,9 @@ namespace Moive_shop
                 {
                     moive_screen_drop.Items.Add(common.screen_drop[index]);
                 }
+
+
+
             }
             else
             {
@@ -537,16 +532,13 @@ namespace Moive_shop
 
         private void theater_showall_Click(object sender, EventArgs e)
         {
-            common.table.Clear();
-            common.show_table.Clear();
+            db_query.search_theater("none", "");
+            theater_search.DataSource = null;
+            db_query.show_all_movie();
             theater_search.Columns.Clear();
+            theater_search.Refresh();
             theater_search.DataSource = common.table;
-
-            db_query.theater_show_all();
-            theater_search.DataSource = common.show_table;
             datagird_style();
-            theater_theater_dropdown.Text = "";
-            theater_screen_dropdown.Text = "";
         }
 
         private void moive_name_drop_SelectedIndexChanged(object sender, EventArgs e)
@@ -590,97 +582,11 @@ namespace Moive_shop
                 no_record.Visible = false;
             }
         }
-        public bool m_flag = false;
-        private void theater_search_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            try
-            {
-                common.edit_flag = false;
-                common.m_edit_flag = false;
-                theater_search.SelectionMode = DataGridViewSelectionMode.CellSelect;
-                if (e.ColumnIndex == 5)
-                {
-                    try
-                    {
-                        theater_search.CurrentRow.ReadOnly = false;
 
-                        if (m_flag == true)
-                        {
-                            common.m_edit_flag = true;
-                            //common.movie_name = theater_search.CurrentRow.Cells[0].Value.ToString();
-                            //common.movie_name = theater_search.CurrentRow.Cells[1].Value.ToString();
-                            Manage_moive add = new Manage_moive();
-                            add.ShowDialog();
-                        }
-                        else
-                        {
-                            common.edit_flag = true;
-                            common.theter_name = theater_search.CurrentRow.Cells[0].Value.ToString();
-                            common.screen_name = theater_search.CurrentRow.Cells[1].Value.ToString();
-                            Manage_theater add = new Manage_theater();
-                            add.ShowDialog();
-                            common.show_table.Clear();
-                            db_query.theater_show_all();
-                            theater_normal_Click(this.theater_normal, null);
+      
 
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        MessageBox.Show(ex.Message);
-                    }
-                }
-                if (e.ColumnIndex == 6)
-                {
-                   
-                        try
-                        {
-                            bool Continue = false;
-                            if (DialogResult.Yes == MessageBox.Show("Are you sure you want to delete?\n\n", "Information", MessageBoxButtons.YesNo, MessageBoxIcon.Information))
-                                Continue = true;
-                            else
-                                Continue = false;
+       
 
-                            if (Continue)
-                            {
-                                if (m_flag == true)
-                                {
-                                    //common.movie_name = Convert.ToString(theater_search.CurrentRow.Cells[0].Value);
-                                    //common.movie_date = Convert.ToString(theater_search.CurrentRow.Cells[1].Value);
-                                    //common.movie_director = Convert.ToString(theater_search.CurrentRow.Cells[2].Value);
-                                    //common.movie_genre = Convert.ToString(theater_search.CurrentRow.Cells[3].Value);
-                                    //common.movie_language = Convert.ToString(theater_search.CurrentRow.Cells[4].Value);
-                                    //db_query.m_delete();
-                                    //movie_normal_Click(this.movie_normal, null);
-                                }
-                                else
-                                {
-                                    try{
-                                    common.theter_name = Convert.ToString(theater_search.CurrentRow.Cells[0].Value);
-                                    common.screen_name = Convert.ToString(theater_search.CurrentRow.Cells[1].Value);
-                                    common.location = Convert.ToString(theater_search.CurrentRow.Cells[2].Value);
-                                    common.city = Convert.ToString(theater_search.CurrentRow.Cells[3].Value);
-                                    common.status = Convert.ToString(theater_search.CurrentRow.Cells[4].Value);
-                                    db_query.theater_delete();
-                                    theater_normal_Click(this.theater_normal, null);
-                                    }
-                                    catch(Exception ex)
-                                    {
-                                        MessageBox.Show(ex.Message);
-                                    }
-                                }
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
-                }
-            }
-            catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            }
-        }
+       
     }
+}

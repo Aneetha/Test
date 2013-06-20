@@ -33,7 +33,9 @@
             this.mins = new System.Windows.Forms.ComboBox();
             this.hours = new System.Windows.Forms.ComboBox();
             this.delete_timing = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.delete_timing)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // am_pm
@@ -51,7 +53,6 @@
             // 
             this.mins.FormattingEnabled = true;
             this.mins.Items.AddRange(new object[] {
-            "00",
             "01",
             "02",
             "03",
@@ -112,7 +113,7 @@
             "58",
             "59",
             "60"});
-            this.mins.Location = new System.Drawing.Point(60, 3);
+            this.mins.Location = new System.Drawing.Point(60, 4);
             this.mins.Name = "mins";
             this.mins.Size = new System.Drawing.Size(53, 21);
             this.mins.TabIndex = 53;
@@ -141,12 +142,20 @@
             // delete_timing
             // 
             this.delete_timing.Image = ((System.Drawing.Image)(resources.GetObject("delete_timing.Image")));
-            this.delete_timing.Location = new System.Drawing.Point(175, 3);
+            this.delete_timing.Location = new System.Drawing.Point(226, 3);
             this.delete_timing.Name = "delete_timing";
             this.delete_timing.Size = new System.Drawing.Size(19, 18);
             this.delete_timing.TabIndex = 51;
             this.delete_timing.TabStop = false;
-            this.delete_timing.Click += new System.EventHandler(this.delete_timing_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(201, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(19, 18);
+            this.pictureBox1.TabIndex = 50;
+            this.pictureBox1.TabStop = false;
             // 
             // add_timing
             // 
@@ -157,9 +166,11 @@
             this.Controls.Add(this.mins);
             this.Controls.Add(this.hours);
             this.Controls.Add(this.delete_timing);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "add_timing";
-            this.Size = new System.Drawing.Size(211, 26);
+            this.Size = new System.Drawing.Size(248, 26);
             ((System.ComponentModel.ISupportInitialize)(this.delete_timing)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -170,5 +181,6 @@
         private System.Windows.Forms.ComboBox mins;
         private System.Windows.Forms.ComboBox hours;
         private System.Windows.Forms.PictureBox delete_timing;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
