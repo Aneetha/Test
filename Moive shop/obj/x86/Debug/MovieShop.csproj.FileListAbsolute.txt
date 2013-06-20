@@ -1,0 +1,74 @@
+E:\Prabhu\Test\Moive shop\Moive shop\bin\Debug\MovieShop.exe.config
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.manage_moive.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.login.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Main.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Manage_theater.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Properties.Resources.resources
+E:\Prabhu\Test\Moive shop\Moive shop\bin\Debug\MovieShop.exe
+E:\Prabhu\Test\Moive shop\Moive shop\bin\Debug\MovieShop.pdb
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\MovieShop.exe
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\MovieShop.pdb
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.add_timing.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.theater_Seating.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Moive_add_theater.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.theater_add_more.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\bin\Debug\MovieShop.exe.config
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\MovieShop.exe
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\MovieShop.pdb
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\bin\Debug\MovieShop.exe
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\bin\Debug\MovieShop.pdb
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\MovieShop.csprojResolveAssemblyReference.cache
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.add_timing.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Manage_moive.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Login.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Main.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Manage_theater.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Moive_add_theater.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.movie_preview.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Properties.Resources.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.theater_add_more.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.theater_Seating.resources
+C:\Users\prabhu\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\MovieShop.csproj.GenerateResource.Cache
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\bin\Debug\MovieShop.exe.config
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\MovieShop.exe
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\MovieShop.pdb
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\bin\Debug\MovieShop.exe
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\bin\Debug\MovieShop.pdb
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.add_timing.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Manage_moive.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Login.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Main.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Manage_theater.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Moive_add_theater.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.movie_preview.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Properties.Resources.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.theater_add_more.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.theater_Seating.resources
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+C:\Documents and Settings\trainee3\Desktop\office\last update\Moive shop\Moive shop\Moive shop\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Moive shop\14-6-13\edit\design\Moive shop\bin\Debug\MovieShop.exe.config
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\MovieShop.exe
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\MovieShop.pdb
+D:\Moive shop\14-6-13\edit\design\Moive shop\bin\Debug\MovieShop.exe
+D:\Moive shop\14-6-13\edit\design\Moive shop\bin\Debug\MovieShop.pdb
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.add_timing.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.Manage_moive.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.Login.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.Main.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.Manage_theater.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.Moive_add_theater.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.movie_preview.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.Properties.Resources.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.theater_add_more.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.theater_Seating.resources
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\GenerateResource-ResGen.read.1.tlog
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\GenerateResource-ResGen.read.4.tlog
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\GenerateResource-ResGen.write.1.tlog
+D:\Moive shop\14-6-13\edit\design\Moive shop\obj\x86\Debug\Moive_shop.add_category.resources

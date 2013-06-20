@@ -1,0 +1,13 @@
+E:\Prabhu\Test\Moive shop\Moive shop\bin\Debug\Moive shop.exe
+E:\Prabhu\Test\Moive shop\Moive shop\bin\Debug\Moive shop.pdb
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Properties.Resources.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\GenerateResource.read.1.tlog
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\GenerateResource.write.1.tlog
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive shop.exe
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive shop.pdb
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.log_in.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Main.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.Manage_theater.resources
+E:\Prabhu\Test\Moive shop\Moive shop\obj\x86\Debug\Moive_shop.manage_moive.resources
+E:\Prabhu\Test\Moive shop\Moive shop\bin\Debug\Moive shop.exe.config
