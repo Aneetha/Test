@@ -468,7 +468,7 @@ namespace Moive_shop
             {
                string query = "select movie_name, release_date, director,genre,written,language,run_time,image,video,featured,status,descrip from table_movie_details where movie_name = '"+theater_search.CurrentRow.Cells[0].Value.ToString().Trim()+"' and language ='"+theater_search.CurrentRow.Cells[6].Value.ToString().Trim()+"'";
 
-               string query1 = "select tm.theater_name,s.screen_name,min(ts.date),max(ts.date) from theater_master tm, table_screen s, table_showing ts,table_movie_details m where m.movie_name ='" + theater_search.CurrentRow.Cells[0].Value.ToString().Trim() + "' and m.language like '" + theater_search.CurrentRow.Cells[6].Value.ToString().Trim() + "' and ts.movie_id=m.movie_id and ts.theater_id = tm.theater_id and s.screen_id = ts.screen_id group by theater_name and screen_name";
+               string query1 = "select tm.theater_name,s.screen_name,min(ts.date),max(ts.date) from theater_master tm, table_screen s, table_showing ts,table_movie_details m where m.movie_name ='" + theater_search.CurrentRow.Cells[0].Value.ToString().Trim() + "' and m.language like '" + theater_search.CurrentRow.Cells[6].Value.ToString().Trim() + "' and ts.movie_id=m.movie_id and ts.theater_id = tm.theater_id and s.screen_id = ts.screen_id group by theater_name and s.screen_name";
                 db_query.moive_edit(query,query1);
                common.moive_edit = true;
                Manage_moive movie = new Manage_moive();

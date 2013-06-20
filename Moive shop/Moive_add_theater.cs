@@ -58,12 +58,18 @@ namespace Moive_shop
                         Add_theater_panel.Controls[i].Controls[8].Text = common.manage_theater.Rows[i].ItemArray[1].ToString();
                         Add_theater_panel.Controls[i].Controls[7].Text = common.manage_theater.Rows[i].ItemArray[2].ToString();
                         Add_theater_panel.Controls[i].Controls[6].Text = common.manage_theater.Rows[i].ItemArray[3].ToString();
-                        string query = "select tst.show_timing from theater_master tm, table_screen s, table_showing ts,table_movie_details m, table_screen_timing tst where tm.theater_name = '" + common.manage_theater.Rows[i].ItemArray[0].ToString() + "' and s.screen_name = '" + common.manage_theater.Rows[i].ItemArray[1].ToString()+"' and ts.movie_id=m.movie_id and ts.theater_id = tm.theater_id and s.screen_id = ts.screen_id and ts.show_timing_id=tst.show_timing_id;";
-                       db_query.edit_timing(query);
-                       for (int j = 0; j < Add_theater_panel.Controls[i].Controls[14].Controls.Count; j++)
-                       {
-                           //for(int k=0;
-                       }
+                       // string query = "select tst.show_timing from theater_master tm, table_screen s, table_showing ts,table_movie_details m, table_screen_timing tst where tm.theater_name = '" + common.manage_theater.Rows[i].ItemArray[0].ToString() + "' and s.screen_name = '" + common.manage_theater.Rows[i].ItemArray[1].ToString()+"' and ts.movie_id=m.movie_id and ts.theater_id = tm.theater_id and s.screen_id = ts.screen_id and ts.show_timing_id=tst.show_timing_id;";
+                       //db_query.edit_timing(query);
+                       //for (int j = 0; j < Add_theater_panel.Controls[i].Controls[14].Controls.Count; j++)
+                       //{
+                       //    for (int k = 0; k < common.edit_screen_timing.Count; k++)
+                       //    {
+                       //        if (Add_theater_panel.Controls[i].Controls[14].Controls[j].Text == common.edit_screen_timing[k])
+                       //        {
+                       //          //  Add_theater_panel.Controls[i].Controls[14].Controls[j].
+                       //        }
+                       //    }
+                       //}
 
 
                     }
